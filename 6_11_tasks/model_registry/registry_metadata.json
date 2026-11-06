@@ -1,0 +1,29 @@
+{
+  "versions": {
+    "v1": {
+      "model_name": "ridge_regressor",
+      "file_path": "model_registry\\v1_ridge_regressor.joblib",
+      "metrics": {
+        "r2": 0.9409
+      },
+      "stage": "Production"
+    },
+    "v2": {
+      "model_name": "random_forest",
+      "file_path": "model_registry\\v2_random_forest.joblib",
+      "metrics": {
+        "r2": 0.9044
+      },
+      "stage": "Rolled_Back"
+    },
+    "v3": {
+      "model_name": "gradient_boosting",
+      "file_path": "model_registry\\v3_gradient_boosting.joblib",
+      "metrics": {
+        "r2": 0.9268
+      },
+      "stage": "Development"
+    }
+  },
+  "production_version": "v1"
+}
