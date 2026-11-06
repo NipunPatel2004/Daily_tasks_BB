@@ -1,0 +1,65 @@
+[
+  {
+    "timestamp": "2026-11-06 13:56:16",
+    "action": "REGISTER",
+    "version": "v1",
+    "details": "Registered ridge_regressor with metrics {'r2': 0.9409}",
+    "author": "system_admin"
+  },
+  {
+    "timestamp": "2026-11-06 13:56:16",
+    "action": "REGISTER",
+    "version": "v2",
+    "details": "Registered random_forest with metrics {'r2': 0.9044}",
+    "author": "system_admin"
+  },
+  {
+    "timestamp": "2026-11-06 13:56:16",
+    "action": "REGISTER",
+    "version": "v3",
+    "details": "Registered gradient_boosting with metrics {'r2': 0.9268}",
+    "author": "system_admin"
+  },
+  {
+    "timestamp": "2026-11-06 13:56:16",
+    "action": "STAGE_CHANGE",
+    "version": "v1",
+    "details": "Transitioned from Development to Production. Reason: initial production model deployment",
+    "author": "system_admin"
+  },
+  {
+    "timestamp": "2026-11-06 13:56:16",
+    "action": "STAGE_CHANGE",
+    "version": "v2",
+    "details": "Transitioned from Development to Staging. Reason: staging evaluation",
+    "author": "system_admin"
+  },
+  {
+    "timestamp": "2026-11-06 13:56:16",
+    "action": "DEMOTE",
+    "version": "v1",
+    "details": "Demoted to Archived due to promotion of v2",
+    "author": "system_admin"
+  },
+  {
+    "timestamp": "2026-11-06 13:56:16",
+    "action": "STAGE_CHANGE",
+    "version": "v2",
+    "details": "Transitioned from Staging to Production. Reason: upgraded to random forest model",
+    "author": "system_admin"
+  },
+  {
+    "timestamp": "2026-11-06 13:56:16",
+    "action": "ROLLBACK_DEMOTE",
+    "version": "v2",
+    "details": "Demoted from Production due to rollback. Reason: performance regression detected in production v2",
+    "author": "system_admin"
+  },
+  {
+    "timestamp": "2026-11-06 13:56:16",
+    "action": "ROLLBACK_RESTORE",
+    "version": "v1",
+    "details": "Restored to Production. Reason: performance regression detected in production v2",
+    "author": "system_admin"
+  }
+]
